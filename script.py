@@ -4,8 +4,6 @@ import os
 from sys import argv
 from shutil import copyfile
 
-print(os.environ["HOME"])
-
 if __name__ == "__main__":
     offset = 0
     try:
