@@ -19,6 +19,6 @@ if __name__ == "__main__":
     with open("filelist") as file:
         for item in file.readlines():
             files = item.strip().split(" ")
-            files = (os.environ["HOME"] + "/" + files[0], "./" + files[1])[::offset]
+            files = (os.environ["HOME"] + "/" + files[0], "./files/" + files[1])[::offset]
             os.makedirs("/".join(files[1].split("/")[:-1]), exist_ok=True)
             copyfile(files[0], files[1])
