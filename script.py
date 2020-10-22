@@ -39,5 +39,5 @@ if __name__ == "__main__":
         print("Found yay in binary folder...")
         with open("pkglist") as file:
             if confirm("Would you like to install packages too?"):
-                os.system("yay --noconfirm -S " + " ".join([i.strip() for i in file.readlines()]))
+                os.system("yes|yay --noconfirm -S " + " ".join([i.strip() for i in file.readlines()]))
 
