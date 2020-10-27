@@ -53,5 +53,5 @@ The file *pkglist* contains all packages that should be installed for everything
 
 The package names are Arch and AUR package names that should exist in either all Arch official repositories (core, extra, community or multilib) or in the AUR.
 
-> If the AUR helper/pacman wrapper [Yay](https://github.com/Jguer/yay) is installed, an alternative to install these packages will appear when running `./script.py install`
+> If the AUR helper/pacman wrapper [Yay](https://github.com/Jguer/yay) is installed, an option to install these packages will appear when running `./script.py install`
 
