@@ -6,10 +6,13 @@ for BRANCH in $(ls .git/refs/heads);
 do
     git checkout $BRANCH
     git merge -m "Merged commits in $BASE_NAME into branches" $BASE_NAME
-    if [ $? -eq 0 ]
+    if [ $? -ne 0 ]
     then
-	git push origin $BRANCH
+	echo MERGE PROBLEM! Check git output and resolve, then rerun this script
+	exit 1
     fi
+    git push origin $BRANCH
+
 done
 
 git checkout $BASE_NAME
