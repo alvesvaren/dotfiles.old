@@ -15,6 +15,20 @@ Make sure all packages is installed from the file pkglist (these are the names f
 ./script.py copy
 ```
 
+## Merge other branches with changes to *base*
+
+Merge all other branches with base:
+
+```bash
+./merge.sh
+```
+
+Merge all other branches with base and push to origin:
+
+```bash
+SHOULD_PUSH=true ./merge.sh
+```
+
 ## Structure
 
 ### Branches
