@@ -130,7 +130,6 @@ for_window [title="win7"] floating enable; border none
 for_window [class="krunner"] floating enable; border none
 for_window [class="kruler"] floating enable; border none
 for_window [class="Kmix"] floating enable; border none
-for_window [clasS="kruler"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="(?i)*nextcloud*"] floating disable
