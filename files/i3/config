@@ -144,7 +144,8 @@ default_border pixel 2
 
 # set plasma default background with feh and (re)start picom
 exec_always --no-startup-id feh --bg-scale /usr/share/wallpapers/Next/contents/images/1920x1080.jpg
-exec_always --no-startup-id killall picom ; sleep 1 ; picom --backend glx --experimental-backends -bc
+exec_always --no-startup-id killall picom
+exec_always --no-startup-id sleep 1 ; picom --backend glx --experimental-backends -bc
 
 # Assign default workspaces for windows
 assign [class="discord"] $ws2
