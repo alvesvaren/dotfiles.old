@@ -147,3 +147,6 @@ exec_always --no-startup-id killall picom ; sleep 1 ; picom --backend glx --expe
 
 # Assign default workspaces for windows
 assign [class="discord"] $ws2
+
+# Focus does not follow mouse
+focus_follows_mouse no
