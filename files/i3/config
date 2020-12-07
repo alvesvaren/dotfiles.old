@@ -133,10 +133,10 @@ for_window [class="Kmix"] floating enable; border none
 for_window [class="Klipper"] floating enable; border none
 for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="(?i)*nextcloud*"] floating disable
-for_window [class="plasmashell" window_type="notification"] border none, floating enable, move position 1565px 9px # 934px
+for_window [class="plasmashell" window_type="notification"] border none, move right 700px, move down 450px
 no_focus [class="plasmashell" window_type="notification"]
+no_focus [class="krunner"]
 for_window [title="Desktop — Plasma"] kill; floating enable; border none
-assign [class="plasmashell" window_type="notification"] output HTML-0
 
 # add gaps to windows and remove title bars for windows
 gaps inner 8

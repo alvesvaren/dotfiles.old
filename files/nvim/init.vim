@@ -72,3 +72,4 @@ vnoremap < <gv
 vnoremap > >gv
 
 map <C-b> :NERDTreeToggle<CR>
+map <C-i> :CocCommand prettier.formatFile<CR>
