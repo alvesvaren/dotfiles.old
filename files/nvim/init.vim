@@ -63,9 +63,13 @@ inoremap <A-up> <Esc>:m .-2<CR>==gi
 vnoremap <A-down> :m '>+1<CR>gv=gv
 vnoremap <A-up> :m '<-2<CR>gv=gv
 
+" Allow :Wq and :W
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command Wq :execute ':silent w !sudo tee % > /dev/null' | :edit! | :q
+
 " Set variables
 let g:lightline = {"colorscheme": "deus"}
-let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-solargraph', 'coc-sh', 'coc-pyright', 'coc-json', 'coc-html', 'coc-css', 'coc-cmake', 'coc-clangd']
+let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-solargraph', 'coc-sh', 'coc-pyright', 'coc-json', 'coc-html', 'coc-css', 'coc-cmake', 'coc-clangd', 'coc-emmet']
 
 " Stop deselection on indention
 vnoremap < <gv
