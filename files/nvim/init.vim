@@ -28,6 +28,7 @@ Plug 'ap/vim-css-color' " Color code highlighting
 Plug 'preservim/nerdtree' " File explorer
 Plug 'tmsvg/pear-tree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'lambdalisue/suda.vim' " Sudo write to files
 call plug#end()
 
 set magic
@@ -64,8 +65,8 @@ vnoremap <A-down> :m '>+1<CR>gv=gv
 vnoremap <A-up> :m '<-2<CR>gv=gv
 
 " Allow :Wq and :W
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
-command Wq :execute ':silent w !sudo tee % > /dev/null' | :edit! | :q
+command W :execute ':SudaWrite'
+command Wq :execute ':W' | :q
 
 " Set variables
 let g:lightline = {"colorscheme": "deus"}
