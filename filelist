@@ -2,3 +2,4 @@
 .config/nvim/coc-settings.json nvim/coc-settings.json
 .zshrc zshrc
 .config/yay/config.json yay/config.json
+.ssh/config ssh/config

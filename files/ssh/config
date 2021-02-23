@@ -1,0 +1,25 @@
+AddKeysToAgent yes
+
+Host s1
+    HostName s1.alve.dev
+    User alve
+    ForwardAgent yes
+
+Host pihub
+    HostName pihub
+    User pi
+    ForwardAgent yes
+
+Host lithnermc
+    HostName lithnermc.westeurope.cloudapp.azure.com
+    User Xe15
+
+Host emil
+    HostName emil.alve.dev
+    User alve
+    ForwardAgent yes
+
+Host aur
+    HostName aur.archlinux.org
+    IdentityFile ~/.ssh/id_rsa_aur
+    User aur
