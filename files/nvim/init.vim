@@ -29,6 +29,7 @@ Plug 'preservim/nerdtree' " File explorer
 Plug 'tmsvg/pear-tree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'lambdalisue/suda.vim' " Sudo write to files
+Plug 'lervag/vimtex'
 call plug#end()
 
 set magic
@@ -70,7 +71,7 @@ command Wq :execute ':W' | :q
 
 " Set variables
 let g:lightline = {"colorscheme": "deus"}
-let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-solargraph', 'coc-sh', 'coc-pyright', 'coc-json', 'coc-html', 'coc-css', 'coc-cmake', 'coc-clangd', 'coc-emmet']
+let g:coc_global_extensions = ['coc-prettier', 'coc-tsserver', 'coc-solargraph', 'coc-sh', 'coc-pyright', 'coc-json', 'coc-html', 'coc-css', 'coc-cmake', 'coc-clangd', 'coc-emmet', 'coc-vimtex']
 
 " Stop deselection on indention
 vnoremap < <gv
