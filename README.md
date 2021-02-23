@@ -1,5 +1,13 @@
 # My dotfiles
 
+## !!! IMPORTANT !!!
+
+This branch has much more packages and files, including personal configurations.
+
+Running the install script on your own computer may ruin alot of things.
+
+This is for me to be able to quickly set up a new working environment, and not to be able to copy how I use everything
+
 ## Install files to file system:
 
 > **IMPORTANT WARNING!** This will overwrite all your local dotfiles
